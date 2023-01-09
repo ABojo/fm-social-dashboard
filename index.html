@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link
@@ -19,6 +19,93 @@
   />
   <title>Frontend Mentor | Social Dashboard</title>
   <body>
+    <main class="dashboard">
+      <h1 class="dashboard__heading">Social Media Dashboard</h1>
+      <span class="dashboard__followers">Total Followers: 23,004</span>
+      <div class="dashboard__toggle">Toggle</div>
+      <section class="profiles dashboard__grid">
+        <div class="profile profile--facebook">
+          <div class="profile__user">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="Facebook logo"
+              class="profile__logo"
+            />
+            <span class="profile__username">@nathanf</span>
+          </div>
+          <span class="profile__number">1987</span>
+          <span class="profile__number-text">followers</span>
+          <span class="profile__growth profile__growth--positive">
+            <img
+              src="./images/icon-up.svg"
+              alt="up arrow"
+              class="profile__growth-img"
+            />
+            12 Today
+          </span>
+        </div>
+        <div class="profile profile--twitter">
+          <div class="profile__user">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="Facebook logo"
+              class="profile__logo"
+            />
+            <span class="profile__username">@nathanf</span>
+          </div>
+          <span class="profile__number">1044</span>
+          <span class="profile__number-text">followers</span>
+          <span class="profile__growth profile__growth--positive">
+            <img
+              src="./images/icon-up.svg"
+              alt="up arrow"
+              class="profile__growth-img"
+            />
+            99 Today
+          </span>
+        </div>
+        <div class="profile profile--instagram">
+          <div class="profile__user">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="Facebook logo"
+              class="profile__logo"
+            />
+            <span class="profile__username">@realnathanf</span>
+          </div>
+          <span class="profile__number">11k</span>
+          <span class="profile__number-text">followers</span>
+          <span class="profile__growth profile__growth--positive">
+            <img
+              src="./images/icon-up.svg"
+              alt="up arrow"
+              class="profile__growth-img"
+            />
+            1099 Today
+          </span>
+        </div>
+        <div class="profile profile--youtube">
+          <div class="profile__user">
+            <img
+              src="./images//icon-facebook.svg"
+              alt="Facebook logo"
+              class="profile__logo"
+            />
+            <span class="profile__username">Nathan F.</span>
+          </div>
+          <span class="profile__number">8239</span>
+          <span class="profile__number-text">followers</span>
+          <span class="profile__growth profile__growth--negative">
+            <img
+              src="./images/icon-down.svg"
+              alt="up arrow"
+              class="profile__growth-img"
+            />
+            144 Today
+          </span>
+        </div>
+      </section>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>
