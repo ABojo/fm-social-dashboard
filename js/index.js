@@ -13,7 +13,7 @@ const storage = (() => {
 
 const displayController = (() => {
   const root = document.documentElement;
-  const themeToggle = document.querySelector(".switch input");
+  const themeToggle = document.getElementById("theme-toggle");
 
   function toggleTheme() {
     root.classList.toggle("dark");
