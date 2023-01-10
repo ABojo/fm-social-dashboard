@@ -41,8 +41,10 @@ body {
   background-color: var(--color-bg);
 }
 
+/* dashboard styling */
+
 .dashboard {
-  max-width: 70rem;
+  max-width: 75rem;
   width: 90%;
   margin: 0 auto;
   margin-top: 3rem;
@@ -78,11 +80,12 @@ body {
 .dashboard__grid {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-gap: 1.5rem;
   margin-top: 3rem;
-  grid-auto-rows: 7rem;
 }
+
+/* profile cards */
 
 .profile {
   background-color: var(--color-card-bg);
@@ -102,7 +105,6 @@ body {
   height: 0.4rem;
   display: block;
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
@@ -133,6 +135,7 @@ body {
   align-self: start;
   display: flex;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .profile__logo {
@@ -153,10 +156,10 @@ body {
   letter-spacing: 0.4rem;
   align-self: start;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .profile__growth {
-  align-self: end;
   display: flex;
   align-items: center;
 }
@@ -167,9 +170,82 @@ body {
   margin: 0.25rem;
 }
 
-.profile__growth--positive {
+/* stat card section*/
+
+.overview-heading {
+  color: var(--color-text-light);
+  margin-top: 3rem;
+  grid-column: 1 / -1;
+}
+.stat {
+  border-radius: var(--border-radius);
+  background-color: var(--color-card-bg);
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.5rem;
+}
+
+.stat__heading {
+  font-size: 1rem;
+}
+
+.stat__number {
+  color: var(--color-text-light);
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.stat__logo,
+.stat__growth {
+  justify-self: end;
+}
+
+.stat__logo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.stat__growth {
+  align-self: end;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.stat__growth img {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.positive {
   color: var(--color-green);
 }
-.profile__growth--negative {
+.negative {
+  color: var(--color-red);
+}
+
+/* growth component */
+
+.growth {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.growth img {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.growth--positive {
+  color: var(--color-green);
+}
+
+.growth--negative {
   color: var(--color-red);
 }
