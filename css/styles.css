@@ -213,16 +213,6 @@ body {
 
 .stat__growth {
   align-self: end;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  font-weight: 800;
-}
-
-.stat__growth img {
-  width: 0.5rem;
-  height: 0.5rem;
-  margin-right: 0.3rem;
 }
 
 .positive {
@@ -272,8 +262,9 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
 }
 
 .switch input {
@@ -282,7 +273,7 @@ body {
   height: 0;
 }
 
-.slider {
+.switch__slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -295,23 +286,23 @@ body {
   border-radius: 34px;
 }
 
-.slider:before {
+.switch__slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 1.6rem;
+  width: 1.6rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: var(--color-bg-pattern);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.switch__checkbox:checked + .switch__slider:before {
+  -webkit-transform: translateX(1.9rem);
+  -ms-transform: translateX(1.9rem);
+  transform: translateX(1.9rem);
 }
 
 @media (max-width: 45em) {
