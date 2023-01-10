@@ -241,18 +241,31 @@ body {
   font-weight: 800;
 }
 
-.growth img {
-  width: 0.5rem;
-  height: 0.5rem;
+.growth::before {
+  display: block;
+  content: "";
+  height: 0.4rem;
+  width: 0.8rem;
   margin-right: 0.3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .growth--positive {
   color: var(--color-green);
 }
 
+.growth--positive::before {
+  background-image: url("../images/icon-up.svg");
+}
+
 .growth--negative {
   color: var(--color-red);
+}
+
+.growth--negative::before {
+  background-image: url("../images/icon-down.svg");
 }
 
 /* switch component */
