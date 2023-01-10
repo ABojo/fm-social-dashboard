@@ -260,30 +260,30 @@ body {
 
 /* switch component */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 4rem;
-  height: 2rem;
   display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.switch__text {
+  margin-right: 1rem;
+  font-weight: 800;
+}
+
+.switch__checkbox {
+  display: none;
 }
 
 .switch__slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  display: block;
+  width: 100%;
   background: var(--color-toggle);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 34px;
+  border-radius: 2rem;
+  width: 4rem;
+  height: 2rem;
 }
 
 .switch__slider:before {
