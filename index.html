@@ -22,13 +22,11 @@
     <main class="dashboard">
       <h1 class="dashboard__heading">Social Media Dashboard</h1>
       <span class="dashboard__followers">Total Followers: 23,004</span>
-      <div class="dashboard__toggle">
-        <label class="switch" for="theme-toggle">
-          <span class="switch__text">Dark Mode</span>
-          <input class="switch__checkbox" type="checkbox" id="theme-toggle" />
-          <span class="switch__slider"></span>
-        </label>
-      </div>
+      <label class="switch" for="theme-toggle">
+        <span class="switch__text">Dark Mode</span>
+        <input class="switch__checkbox" type="checkbox" id="theme-toggle" />
+        <span class="switch__slider"></span>
+      </label>
       <section class="dashboard__grid">
         <div class="profile profile--facebook">
           <div class="profile__user">
@@ -39,8 +37,8 @@
             />
             <span class="profile__username">@nathanf</span>
           </div>
-          <span class="profile__number">1987</span>
-          <span class="profile__number-text">followers</span>
+          <span class="profile__followers">1987</span>
+          <span class="profile__followers-text">followers</span>
           <span class="growth growth--positive"> 12 Today </span>
         </div>
         <div class="profile profile--twitter">
@@ -52,8 +50,8 @@
             />
             <span class="profile__username">@nathanf</span>
           </div>
-          <span class="profile__number">1044</span>
-          <span class="profile__number-text">followers</span>
+          <span class="profile__followers">1044</span>
+          <span class="profile__followers-text">followers</span>
           <span class="growth growth--positive"> 99 Today </span>
         </div>
         <div class="profile profile--instagram">
@@ -65,24 +63,24 @@
             />
             <span class="profile__username">@realnathanf</span>
           </div>
-          <span class="profile__number">11k</span>
-          <span class="profile__number-text">followers</span>
+          <span class="profile__followers">11k</span>
+          <span class="profile__followers-text">followers</span>
           <span class="growth growth--positive"> 1099 Today </span>
         </div>
         <div class="profile profile--youtube">
           <div class="profile__user">
             <img
-              src="./images//icon-facebook.svg"
+              src="./images/icon-youtube.svg"
               alt="Youtube logo"
               class="profile__logo"
             />
             <span class="profile__username">Nathan F.</span>
           </div>
-          <span class="profile__number">8239</span>
-          <span class="profile__number-text">followers</span>
+          <span class="profile__followers">8239</span>
+          <span class="profile__followers-text">subscribers</span>
           <span class="growth growth--negative"> 144 Today </span>
         </div>
-        <h2 class="overview-heading">Overview - Today</h2>
+        <h2 class="dashboard__subheading">Overview - Today</h2>
         <div class="stat">
           <h3 class="stat__heading">Page Views</h3>
           <img
