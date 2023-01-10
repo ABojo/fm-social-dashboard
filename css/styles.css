@@ -301,3 +301,16 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+@media (max-width: 45em) {
+  .dashboard__toggle {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: start;
+    justify-content: space-between;
+    justify-self: stretch;
+    border-top: 1px solid var(--color-card-bg);
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
